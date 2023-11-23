@@ -1,4 +1,5 @@
 console.log("script.js")
+
 // Memilih semua elemen 'figure' yang berada di dalam elemen dengan class 'product-lists'
 const productLists = document.querySelectorAll(".product-lists figure");
 

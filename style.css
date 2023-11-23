@@ -11,6 +11,7 @@
 
     /* font-size */
     --heading1: 48px;
+    --heading2: 56px;
     --paragraph1: 20px;
 
     /* font-family */
@@ -31,8 +32,7 @@ body{
     font-family: var(--font-bebas);
 }
 
-/* Product */
-
+/* Popular Product*/
 .product {
   display: flex;
   justify-content: center;
@@ -55,12 +55,47 @@ body{
   gap: 42px;
 }
 
-.product .product-lists {
+.product-lists {
   display: flex;
   gap: 25px;
 }
 
-.product .product-lists img {
+.product-lists img {
   height: 412px;
   width: auto;
+}
+
+/* Parallax Product */
+.parallax {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.parallax h1{
+  position: absolute;
+  font-size: var(--heading2);
+  color: var(--orange);
+  justify-content: right;
+  align-items: start;
+  padding: 50px 0 0 60px;
+}
+
+.parallax .product-lists{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 0 60px;
+}
+
+.parallax .product-lists img {
+  height: auto;
+  width: 250px;
+}
+
+.btn{
+  border-radius: 20px;
+  border: solid 1px var(--orange);
+  background-color: var(--orange);
 }
