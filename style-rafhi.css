@@ -60,16 +60,20 @@ body{
 }
 
 .product .container h1 {
-  font-size: 40px;
+  font-size: 50px;
+  color: var(--orange);
+}
+
+.product .container .btn {
+  margin: 20px 0 0 0;
 }
 
 .product .container a {
   border: 2px solid;
   border-radius: 8px;
   padding: 10px;
-  padding-top: 15px;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: var(--font-dm);
   font-size: 15px;
 }
 
@@ -101,6 +105,8 @@ body{
 
 .product-desc p {
   margin-bottom: 15px;
+  font-size: 14px;
+  font-family: var(--font-dm);
 }
 
 .product-desc p img {
@@ -115,7 +121,8 @@ button {
   cursor: pointer;
   width: 100%;
   border-radius: 10px;
-  transition: background-color 0.3s ease-in-out; /* Efek animasi perubahan warna latar saat hover */
+  transition: background-color 0.3s ease-in-out;
+  font-family: var(--font-dm);
 }
 
 button:hover {
