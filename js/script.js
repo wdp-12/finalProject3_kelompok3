@@ -105,8 +105,5 @@ window.addEventListener('scroll', async () => {
     }
 });
 
-<<<<<<< HEAD:js/script-rozan.js
-=======
 
 
->>>>>>> e2d7532725853d82fcafecd81433cc40da3a050e:js/script.js
