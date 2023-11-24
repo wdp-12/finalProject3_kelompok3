@@ -1,18 +1,5 @@
-console.log("script.js")
 
-// Section2
-document.addEventListener("DOMContentLoaded", function() {
-    const productLists = document.querySelector(".card");
-
-    window.addEventListener("scroll", function() {
-      const scrollPosition = window.scrollY;
-      const translateY = -scrollPosition * 0.5;
-
-      productLists.style.transform = `translateY(${translateY}px)`;
-    });
-  });
-
-// Section 3
+// Section 3 Page 2
 // Memilih semua elemen 'figure' yang berada di dalam elemen dengan class 'product-lists'
 const productLists = document.querySelectorAll(".popular-lists figure");
 
