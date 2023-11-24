@@ -58,11 +58,7 @@ body{
   background-repeat: no-repeat;
   position: absolute;
 }
-.container {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-}
+
 .header {
   margin: 20px 0;
   display: flex;
@@ -137,7 +133,6 @@ body{
 .product {
   padding: 100px;
   background-image: url('Assets/background4.jpg');
-  object-fit: none;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
