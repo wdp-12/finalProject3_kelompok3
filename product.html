@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parallax Website</title>
     <link rel="icon" href="Assets/logo.png" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="product.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
     <section class="home-product">
+      <div class="container">
+        <div class="header">
+          <img src="Assets/logo.png" class="logo" alt="logo" />
+          <nav>
+            <ul class="nav_links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+            </ul>
+          </nav>
+          <div class="btn">
+            <a class="btn-signUp" href="#"><button>Sign Up</button></a>
+            <a class="btn-login" href="#"><button>Login</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="main-product parallax-bg">
+      <div class="main-product-container">
+        <div class="main-text">
+          <h1>NIKE AIR FORCE</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper vulputate nibh vel venenatis.</p>
+        </div>
+        <div class="main-content">
+          <img src="Assets/product3.png" alt="" style="width: 400px; height: 200px" />
+          <img src="Assets/product1.png" alt="" style="width: 400px; height: 200px" />
+          <img src="Assets/product2.png" alt="" style="width: 400px; height: 200px" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product parallax-bg">
+      <div class="product-head">
         <div class="container">
-            <div class="header">
-                <img src="Assets/logo.png" class="logo" alt="logo">
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                    </ul>
-                </nav>
-                <div class="btn">
-                    <a class="btn-signUp" href="#"><button>Sign Up</button></a>
-                    <a class="btn-login" href="#"><button>Login</button></a>
-                </div>
-            </div>
+          <h1>PRODUCT</h1>
+          <div class="btn">
+            <a href="">View More</a>
+          </div>
         </div>
+      </div>
 
-
+      <div class="row">
+        <div class="card">
+          <img src="Assets/card1.png" alt="" style="width: 200px" />
+          <div class="product-desc">
+            <h4>NIKE AIR FORCE</h4>
+            <p><img src="Assets/Vector.svg" alt="" style="width: 15px" />Nike Sports Wear|Joksel</p>
+            <button>Purchase Now</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Assets/card2.png" alt="" style="width: 200px" />
+          <div class="product-desc">
+            <h4>NIKE AIR FORCE</h4>
+            <p><img src="Assets/Vector.svg" alt="" style="width: 15px" />Nike Sports Wear|Joksel</p>
+            <button>Purchase Now</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Assets/card3.png" alt="" style="width: 200px" />
+          <div class="product-desc">
+            <h4>RUNNING SHOES</h4>
+            <p><img src="Assets/Vector.svg" alt="" style="width: 15px" />Nike Sports Wear|Joksel</p>
+            <button>Purchase Now</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Assets/card4.png" alt="" style="width: 200px" />
+          <div class="product-desc">
+            <h4>CANVAS SHOES</h4>
+            <p><img src="Assets/Vector.svg" alt="" style="width: 15px" />Nike Sports Wear|Joksel</p>
+            <button>Purchase Now</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="product">
-        <div class="product-head">
-            <div class="container">
-                <h1>PRODUCT</h1>
-                <div class="btn">
-                    <a href="">View More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="card">
-                <img src="Assets/card1.png" alt="" style="width: 200px;">
-                <div class="product-desc">
-                    <h4><b>NIKE AIR FORCE</b></h4>
-                    <p><img src="Assets/Vector.svg" alt="" style="width: 15px;">Nike Sports Wear|Joksel</p>
-                    <button>Purchase Now</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="Assets/card2.png" alt="" style="width: 200px;">
-                <div class="product-desc">
-                    <h4><b>NIKE AIR FORCE</b></h4>
-                    <p><img src="Assets/Vector.svg" alt="" style="width: 15px;">Nike Sports Wear|Joksel</p>
-                    <button>Purchase Now</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="Assets/card3.png" alt="" style="width: 200px;">
-                <div class="product-desc">
-                    <h4><b>RUNNING SHOES</b></h4>
-                    <p><img src="Assets/Vector.svg" alt="" style="width: 15px;">Nike Sports Wear|Joksel</p>
-                    <button>Purchase Now</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="Assets/card4.png" alt="" style="width: 200px;">
-                <div class="product-desc">
-                    <h4><b>CANVAS SHOES</b></h4>
-                    <p><img src="Assets/Vector.svg" alt="" style="width: 15px;">Nike Sports Wear|Joksel</p>
-                    <button>Purchase Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Popular Section -->
     <section class="popular">
-        <div class="container">
-            <article>
-                <div>
-                    <h1>POPULAR PICKS</h1>
-                    <p>
-                        Our popular picks for most favorited Nike Men’s & Women’s shoes.
-                    </p>
-                </div>
-            </article>
-            <div class="popular-lists">
-                <figure>
-                    <img src="Assets/cardproduct1.png" alt="" />
-                </figure>
-                <figure>
-                    <img src="Assets/cardproduct2.png" alt="" />
-                </figure>
-                <figure>
-                    <img src="Assets/cardproduct3.png" alt="" />
-                </figure>
-            </div>
+      <div class="container">
+        <article>
+          <div>
+            <h1>POPULAR PICKS</h1>
+            <p>Our popular picks for most favorited Nike Men’s & Women’s shoes.</p>
+          </div>
+        </article>
+        <div class="popular-lists">
+          <figure>
+            <img src="Assets/cardproduct1.png" alt="" />
+          </figure>
+          <figure>
+            <img src="Assets/cardproduct2.png" alt="" />
+          </figure>
+          <figure>
+            <img src="Assets/cardproduct3.png" alt="" />
+          </figure>
         </div>
+      </div>
     </section>
 
     <script src="js/product.js"></script>
-</body>
-
+  </body>
 </html>
