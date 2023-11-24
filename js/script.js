@@ -51,7 +51,7 @@ const addnewContent = () => {
         const btnCollection = document.createElement('button');
         btnCollection.classList.add('btnCollection');
         btnCollection.textContent = 'Collection';
-        
+
         contentA.appendChild(featured);
         contentA.appendChild(textshoe);
         textshoe.appendChild(tahun);
@@ -66,16 +66,26 @@ const addnewContent = () => {
     } else if (isiContent === 1) {
         const contentB = document.createElement('div');
         contentB.classList.add('column');
+        contentB.id = 'contentMouse';
 
         const contentimg = document.createElement('div');
         contentimg.classList.add('contentimg');
+        contentimg.id = 'contentimg';
 
         contentB.appendChild(contentimg);
-
         content.appendChild(contentB);
+
+        const mouse = 100;
+        contentB.addEventListener('mousemove', e => {
+            const x = e.clientX;
+            const y = e.clientY;
+
+            contentimg.style.transform = `
+            translateX(${x / mouse}%)
+            translateY(${y / mouse}%)`;
+        })
     }
     isiContent++;
-
 };
 
 window.addEventListener('scroll', async () => {
@@ -90,7 +100,10 @@ window.addEventListener('scroll', async () => {
 
     const result = await fetchData();
 
-    if (scrollTop > 200) {
+    if (scrollTop > 100) {
         addnewContent();
     }
 });
+
+
+

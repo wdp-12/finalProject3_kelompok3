@@ -4,9 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "DM Sans", sans-serif;
-  font-family: 'Bebas Neue', sans-serif; */
 }
+/* Section 1 dan 2 Awal */
 #section {
   position: relative;
   width: 100%;
@@ -44,6 +43,7 @@
   position: fixed;
   width: 100%;
   padding: 0 100px 0 100px;
+  z-index: 1;
 }
 .header .logo {
   width: 50px;
@@ -231,3 +231,5 @@ section .container .text-judul {
   width: 632px;
   height: 563px;
 }
+
+/* Section 1 dan 2 Akhir */
