@@ -124,7 +124,7 @@ section .container .text-judul {
 .text-judul .btn-text button {
   padding: 10px 20px 10px 20px;
   background: none;
-  border: 2px white solid;
+  border: none;
   color: white;
   font-size: 25px;
   font-family: "DM Sans", sans-serif;
@@ -134,7 +134,7 @@ section .container .text-judul {
 }
 .text-judul .btn-text button:hover {
   background-color: #fc6b3f;
-  color: white;
+  color: black;
 }
 .content {
   margin: 0 100px 0 100px;
