@@ -95,16 +95,3 @@ window.addEventListener('scroll', async () => {
     }
 });
 
-const imghome2 = document.getElementById("home2");
-const textContent = document.getElementById("text");
-document.addEventListener("scroll", (Event) => {
-    var positionY = window.scrollY;
-    textContent.style.transform = `translateY(${positionY * 0.1 + -50}px)`;
-    imghome2.style.transform = `translateY(${positionY * 0.1 + -50}px)`;
-
-    var _new0pacity = positionY * 0.005;
-    if (_new0pacity >= 0 && _new0pacity <= 1) {
-        imghome2.style.opacity = _new0pacity;
-        textContent.style.opacity = _new0pacity;
-    }
-});
