@@ -94,9 +94,15 @@ body{
   margin: 25px;
 }
 
-.product .row .card img {
+.product .row .card {
   width: 100%;
   height: auto;
+  transform: translateY(18%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.product .row .card:hover {
+  transform: translateY(0);
 }
 
 .product-desc {
