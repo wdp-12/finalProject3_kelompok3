@@ -231,3 +231,13 @@ section .container .text-judul {
   width: 632px;
   height: 563px;
 }
+
+#sectionTiga {
+  background-color: black;
+  display: flex;
+}
+
+#sectionTiga img {
+  height: 60px;
+  width: 40px;
+}
