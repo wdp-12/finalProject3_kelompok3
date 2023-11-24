@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
 
 :root {
 
@@ -41,7 +41,8 @@ body{
 /* Product */
 .product {
   padding: 100px;
-  background-image: url('Assets/background1.jpg');
+  background-image: url('Assets/background4.jpg');
+  object-fit: none;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -94,9 +95,16 @@ body{
   margin: 25px;
 }
 
-.product .row .card img {
+.product .row .card {
   width: 100%;
   height: auto;
+  transform: translateY(5%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.product .row .card:hover {
+  transform: translateY(0);
+  transform: scale(1.1);
 }
 
 .product-desc {

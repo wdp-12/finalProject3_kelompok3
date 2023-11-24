@@ -104,6 +104,3 @@ window.addEventListener('scroll', async () => {
         addnewContent();
     }
 });
-
-
-
