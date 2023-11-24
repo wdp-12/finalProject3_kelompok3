@@ -1,6 +1,7 @@
-console.log("script.js")
+
+// Section 3 Page 2
 // Memilih semua elemen 'figure' yang berada di dalam elemen dengan class 'product-lists'
-const productLists = document.querySelectorAll(".product-lists figure");
+const productLists = document.querySelectorAll(".popular-lists figure");
 
 // Memilih setiap elemen 'figure' yang telah dipilih
 productLists.forEach((card) => {
