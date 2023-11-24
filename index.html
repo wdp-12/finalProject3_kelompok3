@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Toko Sepatu</title>
     <link rel="icon" href="Assets/logo.png" type="image/x-icon" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -37,11 +38,26 @@
             <div id="content" class="content"></div>
         </div>
     </section>
-    <!-- Section 1 dan 2 akhir -->
 
-    <!-- Section 3 Awal -->
-    <section>
+    <section id="sectionTiga">
+        
+        <div class="container">
+            <div class="image">
+            <img src="Assets/home2.png" class="home" id="home2">
+            </div>
+            <div class="text-content" id="text">
+            <h2>BE YOUR<br>OWN LEVEL</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae placeat voluptatum officiis ducimus ratione sit vel esse eligendi minus, magnam ullam quos corporis perspiciatis nulla. Unde, accusantium ratione. Deserunt.</P>
+            <button class="btn-shop">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        ScrollReveal().reveal('#sectionTiga .container .image', { delay: 500, origin: 'left'});
+        ScrollReveal().reveal('#sectionTiga .container .text-content', { delay: 600, origin: 'right'});
+    </script>
 
+    <script src="js/script-rozan.js"></script>
     </section>
     <!-- Section 3 Akhir -->
 
