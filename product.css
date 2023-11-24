@@ -1,34 +1,31 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap");
 
 :root {
+  /* color */
+  --orange: #fc6b3f;
+  --text: #ffffff;
+  --black: black;
 
-    /* color */
-    --orange: #FC6B3F;
-    --text: #ffffff;
-    --black: black;
+  /* font-size */
+  --heading1: 48px;
+  --paragraph1: 20px;
 
-
-    /* font-size */
-    --heading1: 48px;
-    --paragraph1: 20px;
-
-    /* font-family */
-    --font-bebas: "Bebas Neue";
-    --font-dm: "DM Sans";
+  /* font-family */
+  --font-bebas: "Bebas Neue";
+  --font-dm: "DM Sans";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--text);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
 }
 
-body{
-    Background-color: var(--black);
-    overflow-x: hidden;
-    font-family: var(--font-bebas);
+body {
+  background-color: var(--black);
+  overflow-x: hidden;
+  font-family: var(--font-bebas);
 }
 
 /* PAGE 1 */
@@ -49,6 +46,7 @@ body{
   height: 100vh;
   object-fit: cover;
 }
+
 #section .dekorasi {
   background-position: 50% 50%;
   width: 100%;
@@ -69,15 +67,18 @@ body{
   padding: 0 100px 0 100px;
   z-index: 1;
 }
+
 .header .logo {
   width: 50px;
   height: 20px;
 }
+
 .nav_links {
   display: flex;
   list-style: none;
   gap: 50px;
 }
+
 .nav_links li a {
   text-decoration: none;
   color: white;
@@ -85,13 +86,16 @@ body{
   font-weight: bold;
   font-family: "DM Sans", sans-serif;
 }
+
 .nav_links li a:hover {
   text-decoration: underline;
 }
+
 .header .btn {
   display: flex;
   gap: 16px;
 }
+
 .btn .btn-signUp button {
   background-color: #fc6b3f;
   padding: 6px 10px 6px 10px;
@@ -103,11 +107,13 @@ body{
   font-weight: bold;
   cursor: pointer;
 }
+
 .btn .btn-signUp button:hover {
   background-color: white;
   color: black;
   border: 1px white solid;
 }
+
 .btn .btn-login button {
   background: none;
   padding: 6px 10px 6px 10px;
@@ -119,20 +125,18 @@ body{
   font-weight: bold;
   cursor: pointer;
 }
+
 .btn .btn-login button:hover {
   background-color: #fc6b3f;
   color: white;
   border: 1px #fc6b3f solid;
 }
 
-
-
-
 /* PAGE 2 */
 /* Product */
 .product {
   padding: 100px;
-  background-image: url('Assets/background4.jpg');
+  background-image: url("Assets/background4.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -217,7 +221,7 @@ body{
 }
 
 button {
-  background-color: #FC6B3F;
+  background-color: #fc6b3f;
   color: white;
   padding: 10px;
   border: none;
@@ -238,6 +242,7 @@ button:hover {
   justify-content: center;
   padding: 60px 60px;
 }
+
 .popular .container {
   width: 100%;
   display: flex;
@@ -246,7 +251,7 @@ button:hover {
   gap: 42px;
 }
 
-.popular article h1{
+.popular article h1 {
   display: flex;
   font-size: var(--heading1);
   color: var(--orange);
@@ -263,4 +268,72 @@ button:hover {
 .popular .popular-lists img {
   height: 412px;
   width: auto;
+}
+
+/* About */
+.about {
+  text-align: justify;
+  padding: 20px;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--orange);
+  font-size: var(--heading1);
+}
+
+.content1 {
+  display: flex;
+  justify-content: center;
+  margin-left: -400px;
+  padding: 20px;
+}
+
+.about-desc {
+  text-align: left;
+  max-width: 300px;
+  font-family: var(--font-dm);
+}
+
+.card {
+  justify-content: left;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  margin-right: -400px;
+  padding: 20px;
+}
+
+.about-desc2 {
+  width: 300px;
+  font-family: var(--font-dm);
+  text-align: left;
+}
+
+.card2 {
+  justify-content: right;
+  margin-left: 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 40px;
+  background-color: rgb(18, 20, 25);
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
 }
