@@ -121,19 +121,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  background-position: center;
-  background-size: cover;
   text-align: start;
-}
-
-/* Add this new class for the background image */
-.main-product-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 .main-product-container {
@@ -141,12 +129,14 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 5px;
 }
 
 .main-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 
 .main-text h1 {
@@ -168,6 +158,16 @@ body {
   margin-left: auto;
 }
 
+.blurable-image {
+  filter: blur(5px);
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.blurable-image:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+
 /* PAGE 2 */
 /* Product Section */
 .product {
@@ -176,8 +176,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 .product .product-head {
@@ -193,6 +191,7 @@ body {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .product .container h1 {

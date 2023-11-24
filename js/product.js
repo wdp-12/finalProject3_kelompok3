@@ -13,6 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var blurableImages = document.querySelectorAll(".blurable-image");
+
+  blurableImages.forEach(function (image) {
+    image.addEventListener("mouseenter", function () {
+      image.style.filter = "blur(0)";
+      image.style.transform = "scale(1.1)";
+    });
+
+    image.addEventListener("mouseleave", function () {
+      image.style.filter = "blur(5px)";
+      image.style.transform = "scale(1)";
+    });
+  });
+});
+
 // Section 3 Page 2
 const popularLists = document.querySelectorAll(".popular-lists figure");
 
