@@ -318,6 +318,10 @@ body {
 .about {
   text-align: justify;
   padding: 20px;
+  background-image: url("Assets/background4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .about-flex {
@@ -366,6 +370,19 @@ body {
   justify-content: right;
   margin-left: 20px;
 }
+
+.about img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.9s ease;
+  border-radius: 15px;
+}
+
+.about img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Footer */
 .footer {
