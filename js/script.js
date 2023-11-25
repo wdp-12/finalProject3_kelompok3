@@ -76,7 +76,7 @@ const addnewContent = () => {
     contentB.appendChild(contentimg);
     content.appendChild(contentB);
 
-    const mouse = 80;
+    const mouse = 150;
     contentB.addEventListener("mousemove", (e) => {
       const x = e.clientX;
       const y = e.clientY;
