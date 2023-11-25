@@ -152,3 +152,12 @@ imagereviews.addEventListener("mousemove", (e) => {
       translateX(${x / simageright}%)
       translateY(${y / simageright}%)`;
 });
+
+ScrollReveal().reveal("#sectionTiga .container .image", {
+    delay: 500,
+    origin: "left",
+  });
+  ScrollReveal().reveal("#sectionTiga .container .text-content", {
+    delay: 600,
+    origin: "right",
+  });

@@ -383,7 +383,6 @@ body {
   transform: translateY(0);
 }
 
-
 /* Footer */
 .footer {
   display: flex;
@@ -392,6 +391,7 @@ body {
   height: 100px;
   gap: 40px;
   background-color: rgb(18, 20, 25);
+  padding: 5rem;
 }
 
 .footer img {
