@@ -89,3 +89,21 @@ popularLists.forEach((card) => {
   card.addEventListener("mousemove", (e) => mouseMove(e, state, cardInner, cardBackground));
   card.addEventListener("mouseout", () => mouseOut(cardInner, cardBackground));
 });
+
+// section about
+document.addEventListener("DOMContentLoaded", function () {
+  var aboutImages = document.querySelectorAll(".about img");
+
+  function checkScroll() {
+    var scrollPosition = window.innerHeight + window.scrollY;
+
+    aboutImages.forEach(function (img) {
+      if (img.offsetTop < scrollPosition) {
+        img.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkScroll);
+  checkScroll(); // Periksa saat halaman dimuat untuk memastikan elemen sudah terlihat
+});
