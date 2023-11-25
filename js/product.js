@@ -1,3 +1,4 @@
+// BG Scroll
 document.addEventListener("DOMContentLoaded", function () {
   var mainProductSection = document.querySelector(".main-product");
   var productSection = document.querySelector(".product");
@@ -13,19 +14,38 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Blur Main Content
 document.addEventListener("DOMContentLoaded", function () {
-  var blurableImages = document.querySelectorAll(".blurable-image");
+  var mainContentSection = document.querySelector(".main-content");
+  var blurredImages = mainContentSection.querySelectorAll(".blurable-image");
+  var lastScrollPosition = 0;
 
-  blurableImages.forEach(function (image) {
-    image.addEventListener("mouseenter", function () {
-      image.style.filter = "blur(0)";
-      image.style.transform = "scale(1.1)";
-    });
+  window.addEventListener("scroll", function () {
+    var scrollY = window.scrollY;
+    var translateY = scrollY * 0.5;
 
-    image.addEventListener("mouseleave", function () {
-      image.style.filter = "blur(5px)";
-      image.style.transform = "scale(1)";
-    });
+    mainContentSection.style.transform = "translateY(" + translateY + "px)";
+
+    if (scrollY > lastScrollPosition) {
+      blurredImages.forEach(function (image) {
+        var blurAmount = 5 + scrollY * 0.01;
+        image.style.filter = "blur(" + blurAmount + "px)";
+      });
+    } else {
+      if (scrollY === 0) {
+        blurredImages.forEach(function (image) {
+          image.style.filter = "blur(0)";
+        });
+      } else {
+        blurredImages.forEach(function (image) {
+          var blurAmount = 5 + scrollY * 0.01;
+          blurAmount = Math.max(blurAmount, 0);
+          image.style.filter = "blur(" + blurAmount + "px)";
+        });
+      }
+    }
+
+    lastScrollPosition = scrollY;
   });
 });
 
