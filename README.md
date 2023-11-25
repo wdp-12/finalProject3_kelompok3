@@ -12,8 +12,7 @@ Dalam project ini kami membuat parallax website dengan kreatifitas masing-masing
 
 ## Group 3 | Anggota
 
-[@M Ansori Pratama](https://www.github.com/Demitri-Ansssss)
-
+- [@M Ansori Pratama](https://www.github.com/Demitri-Ansssss)
 - [@M Rafhi Said Hafiz](https://github.com/RafhiSaid)
 - [@Odilia Helene](https://github.com/odiliahln)
 - [@Ivan Wijdan](https://www.github.com/ivanwijdan16)
