@@ -4,7 +4,7 @@
   /* color */
   --orange: #fc6b3f;
   --text: #ffffff;
-  --black: black;
+  --black: #020f13;
 
   /* font-size */
   --heading1: 48px;
@@ -389,6 +389,7 @@ body {
   height: 100px;
   gap: 40px;
   background-color: rgb(18, 20, 25);
+  padding: 5rem;
 }
 
 .footer img {

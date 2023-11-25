@@ -233,10 +233,20 @@ section .container .text-judul {
 }
 
 #sectionTiga .container {
-  background-color: black;
+  background-color: #020f13;
   display: flex;
   align-items: center;
 }
+#sectionTiga .container::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 100%; /* Sesuaikan dengan kebutuhan */
+  height: 40px; /* Sesuaikan dengan kebutuhan */
+  background: linear-gradient(to top, #020f13, transparent);
+  z-index: 10000;
+}
+
 #sectionTiga .text-content {
   margin-left: 20px;
   margin-right: 150px;
@@ -277,3 +287,102 @@ section .container .text-judul {
   margin-left: 100px;
 }
 /* Section 1 dan 2 Akhir */
+/* section 4 */
+#section4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 40rem;
+  width: 100%;
+  background-color: #020f13;
+}
+/* .section4 img {
+    width: 100%;
+    margin: 0rem;
+  } */
+
+.revTitle {
+  margin-top: 5rem;
+}
+.Title {
+  /* margin: 1rem; */
+  font-size: 90px;
+  color: #fc6b3f;
+  font-style: normal;
+  font-family: "Bebas Neue", sans-serif;
+}
+.subTitle {
+  font-family: "DM sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  font-style: normal;
+}
+.ImageReviews {
+  margin: 50px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ImageLeft img {
+  width: 41rem;
+  height: 38rem;
+}
+.ImageLeft,
+.ImageRight {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  pointer-events: none;
+}
+.ImageLeft {
+  display: flex;
+  justify-content: end;
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+.ImageRight {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ImageRight img {
+  width: 34rem;
+  height: 18rem;
+  flex-shrink: 0;
+}
+
+.revTitle {
+  position: relative;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: 1s all ease;
+}
+.revTitle.active {
+  transform: translateY(0);
+  opacity: 10;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 40px;
+  background-color: rgb(18, 20, 25);
+  padding: 5rem;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+}
