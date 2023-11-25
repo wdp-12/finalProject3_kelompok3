@@ -1,80 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Toko Sepatu</title>
     <link rel="icon" href="Assets/logo.png" type="image/x-icon" />
     <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Section 1 and 2 Awal -->
     <section id="section">
-        <img src="Assets/background1.jpg" class="bg" id="bg1" />
-        <img src="Assets/background2.png" class="dekorasi" id="bg2" />
-        <div class="container">
-            <div class="header">
-                <img src="Assets/logo.png" class="logo" alt="logo">
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                    </ul>
-                </nav>
-                <div class="btn">
-                    <a class="btn-signUp" href="#"><button>Sign Up</button></a>
-                    <a class="btn-login" href="#"><button>Login</button></a>
-                </div>
-            </div>
-            <div class="text-judul" id="judul">
-                <p class="text-p">Welcome to</p>
-                <h1 class="text-h1">OUR WEBSITE</h1>
-                <a class="btn-text" href="#"><button>Continue</button></a>
-            </div>
-            <div id="content" class="content"></div>
+      <img src="Assets/background1.jpg" class="bg" id="bg1" />
+      <img src="Assets/background2.png" class="dekorasi" id="bg2" />
+      <div class="container">
+        <div class="header">
+          <img src="Assets/logo.png" class="logo" alt="logo" />
+          <nav>
+            <ul class="nav_links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+            </ul>
+          </nav>
+          <div class="btn">
+            <a class="btn-signUp" href="#"><button>Sign Up</button></a>
+            <a class="btn-login" href="#"><button>Login</button></a>
+          </div>
         </div>
+        <div class="text-judul" id="judul">
+          <p class="text-p">Welcome to</p>
+          <h1 class="text-h1">OUR WEBSITE</h1>
+          <a class="btn-text" href="#"><button>Continue</button></a>
+        </div>
+        <div id="content" class="content"></div>
+      </div>
     </section>
 
     <section id="sectionTiga">
-        
-        <div class="container">
-            <div class="image">
-            <img src="Assets/home2.png" class="home" id="home2">
-            </div>
-            <div class="text-content" id="text">
-            <h2>BE YOUR<br>OWN LEVEL</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae placeat voluptatum officiis ducimus ratione sit vel esse eligendi minus, magnam ullam quos corporis perspiciatis nulla. Unde, accusantium ratione. Deserunt.</P>
-            <button class="btn-shop">Shop Now</button>
-            </div>
+      <div class="container">
+        <div class="image">
+          <img src="Assets/home2.png" class="home" id="home2" />
         </div>
+        <div class="text-content" id="text">
+          <h2>BE YOUR<br />OWN LEVEL</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            recusandae placeat voluptatum officiis ducimus ratione sit vel esse
+            eligendi minus, magnam ullam quos corporis perspiciatis nulla. Unde,
+            accusantium ratione. Deserunt.
+          </p>
+          <button class="btn-shop">Shop Now</button>
+        </div>
+      </div>
     </section>
     <script>
-        ScrollReveal().reveal('#sectionTiga .container .image', { delay: 500, origin: 'left'});
-        ScrollReveal().reveal('#sectionTiga .container .text-content', { delay: 600, origin: 'right'});
+      ScrollReveal().reveal("#sectionTiga .container .image", {
+        delay: 500,
+        origin: "left",
+      });
+      ScrollReveal().reveal("#sectionTiga .container .text-content", {
+        delay: 600,
+        origin: "right",
+      });
     </script>
 
     <script src="js/script-rozan.js"></script>
-    </section>
+
     <!-- Section 3 Akhir -->
 
     <!-- Section 4 Aawal -->
-    <section>
+    <section class="section4">
+      <div class="reviel">
+        <div class="revTitle">
+          <h1 class="Title">OUR SHOES REVIEWS</h1>
+          <h5 class="subTitle">
+            Check the comments and Ratings given by users
+          </h5>
+        </div>
 
+        <div class="ImageReviews" id="ImageReviews">
+          <div class="ImageLeft" id="ImageLeft">
+            <img
+              id="home3"
+              src="./Assets/home3.png"
+              alt=""
+              srcset=""
+              data-value="5"
+            />
+          </div>
+          <div class="ImageRight" id="ImageRight">
+            <img
+              id="home4"
+              src="./Assets/home4.png"
+              alt=""
+              srcset=""
+              data-value="-5"
+            />
+            <img
+              id="home5"
+              src="./Assets/home5.png"
+              alt=""
+              srcset=""
+              data-value="-5"
+            />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Section 4 Akhir -->
 
     <!-- Footer Awal -->
-    <footer>
-        
-    </footer>
+    <section class="footer" id="footer">
+      <img id="img1" src="Assets/instagram.png" alt="" />
+      <img id="img2" src="Assets/Github.png" alt="" />
+      <img id="img3" src="Assets/Linkedin.png" alt="" />
+    </section>
     <!-- Footer Akhir -->
 
-
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
