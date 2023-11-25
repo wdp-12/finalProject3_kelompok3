@@ -237,6 +237,16 @@ section .container .text-judul {
   display: flex;
   align-items: center;
 }
+#sectionTiga .container::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 100%; /* Sesuaikan dengan kebutuhan */
+  height: 40px; /* Sesuaikan dengan kebutuhan */
+  background: linear-gradient(to top, #020f13, transparent);
+  z-index: 10000;
+}
+
 #sectionTiga .text-content {
   margin-left: 20px;
   margin-right: 150px;
