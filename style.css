@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #020f13;
+}
 /* Section 1 dan 2 Awal */
 #section {
   position: relative;
@@ -233,7 +236,6 @@ section .container .text-judul {
 }
 
 #sectionTiga .container {
-  background-color: #020f13;
   display: flex;
   align-items: center;
 }
@@ -296,7 +298,6 @@ section .container .text-judul {
   align-self: center;
   margin-top: 40rem;
   width: 100%;
-  background-color: #020f13;
 }
 /* .section4 img {
     width: 100%;
